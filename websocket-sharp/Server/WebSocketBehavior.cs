@@ -1115,7 +1115,7 @@ namespace WebSocketSharp.Server
     /// received within a time; otherwise, <c>false</c>.
     /// </returns>
     /// <exception cref="InvalidOperationException">
-    /// The Ping method is not available when the session has not started yet.
+    /// This method is not available when the session has not started yet.
     /// </exception>
     protected bool Ping ()
     {
