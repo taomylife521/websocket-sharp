@@ -1071,8 +1071,8 @@ namespace WebSocketSharp.Server
     /// Called when the WebSocket connection for a session has been closed.
     /// </summary>
     /// <param name="e">
-    /// A <see cref="CloseEventArgs"/> that represents the event data passed
-    /// from a <see cref="WebSocket.OnClose"/> event.
+    /// A <see cref="CloseEventArgs"/> that represents the close event data
+    /// passed from the WebSocket interface.
     /// </param>
     protected virtual void OnClose (CloseEventArgs e)
     {
