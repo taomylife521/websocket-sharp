@@ -1093,8 +1093,8 @@ namespace WebSocketSharp.Server
     /// Called when the WebSocket interface for a session receives a message.
     /// </summary>
     /// <param name="e">
-    /// A <see cref="MessageEventArgs"/> that represents the message event
-    /// data passed from the interface.
+    /// A <see cref="MessageEventArgs"/> that represents the message event data
+    /// passed from the interface.
     /// </param>
     protected virtual void OnMessage (MessageEventArgs e)
     {
