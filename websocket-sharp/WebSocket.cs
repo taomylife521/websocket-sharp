@@ -565,7 +565,7 @@ namespace WebSocketSharp
           var canGet = _readyState > WebSocketState.Connecting;
 
           if (!canGet) {
-            var msg = "The get operation is not available.";
+            var msg = "The current state of the interface is New or Connecting.";
 
             throw new InvalidOperationException (msg);
           }
