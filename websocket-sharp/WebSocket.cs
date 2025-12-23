@@ -4237,7 +4237,7 @@ namespace WebSocketSharp
     public void SetCredentials (string username, string password, bool preAuth)
     {
       if (!_isClient) {
-        var msg = "The SetCredentials method is not available.";
+        var msg = "The interface is not for the client.";
 
         throw new InvalidOperationException (msg);
       }
