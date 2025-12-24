@@ -4229,8 +4229,8 @@ namespace WebSocketSharp
     ///   -or-
     ///   </para>
     ///   <para>
-    ///   The SetCredentials method is not available when the current state of
-    ///   the interface is neither New nor Closed.
+    ///   This method is not available when the current state of the interface
+    ///   is neither New nor Closed.
     ///   </para>
     /// </exception>
     public void SetCredentials (string username, string password, bool preAuth)
