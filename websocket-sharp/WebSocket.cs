@@ -4192,8 +4192,8 @@ namespace WebSocketSharp
     ///   with the credentials.
     ///   </para>
     ///   <para>
-    ///   <see langword="null"/> or an empty string if initializes
-    ///   the credentials.
+    ///   <see langword="null"/> or an empty string if the credentials need
+    ///   to be initialized.
     ///   </para>
     /// </param>
     /// <param name="password">
