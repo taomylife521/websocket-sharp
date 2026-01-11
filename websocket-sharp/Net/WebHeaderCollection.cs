@@ -1062,7 +1062,7 @@ namespace WebSocketSharp.Net
     /// characters.
     /// </exception>
     /// <exception cref="InvalidOperationException">
-    /// This instance does not allow the header.
+    /// This method is not available if this instance does not allow the header.
     /// </exception>
     protected void AddWithoutValidate (string headerName, string headerValue)
     {
