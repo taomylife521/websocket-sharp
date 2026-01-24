@@ -1835,7 +1835,8 @@ namespace WebSocketSharp.Net
     /// characters.
     /// </exception>
     /// <exception cref="InvalidOperationException">
-    /// This instance does not allow the header.
+    /// This method is not available if the current instance does not allow
+    /// that header type.
     /// </exception>
     public override void Set (string name, string value)
     {
