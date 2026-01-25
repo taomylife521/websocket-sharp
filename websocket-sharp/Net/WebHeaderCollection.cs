@@ -1841,12 +1841,14 @@ namespace WebSocketSharp.Net
     public override void Set (string name, string value)
     {
       name = checkName (name, "name");
-      value = checkValue (value, "value");
 
       var headerType = getHeaderType (name);
 
-      checkRestricted (name, headerType);
       checkAllowed (headerType);
+
+      checkRestricted (name, headerType);
+
+      value = checkValue (value, "value");
 
       set (name, value, headerType);
     }
