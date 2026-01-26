@@ -1818,13 +1818,13 @@ namespace WebSocketSharp.Net
     ///   -or-
     ///   </para>
     ///   <para>
-    ///   <paramref name="value"/> contains an invalid character.
+    ///   <paramref name="name"/> is a restricted header name.
     ///   </para>
     ///   <para>
     ///   -or-
     ///   </para>
     ///   <para>
-    ///   <paramref name="name"/> is a restricted header name.
+    ///   <paramref name="value"/> contains an invalid character.
     ///   </para>
     /// </exception>
     /// <exception cref="ArgumentNullException">
