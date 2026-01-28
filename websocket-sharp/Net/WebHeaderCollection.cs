@@ -807,7 +807,7 @@ namespace WebSocketSharp.Net
         throw new ArgumentNullException (paramName);
 
       if (name.Length == 0) {
-        var msg = "The name is an empty string.";
+        var msg = "An empty string.";
 
         throw new ArgumentException (msg, paramName);
       }
