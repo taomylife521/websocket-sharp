@@ -815,7 +815,7 @@ namespace WebSocketSharp.Net
       name = name.Trim ();
 
       if (name.Length == 0) {
-        var msg = "The name is a string of spaces.";
+        var msg = "That name is a string of spaces.";
 
         throw new ArgumentException (msg, paramName);
       }
