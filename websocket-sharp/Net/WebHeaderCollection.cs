@@ -1389,7 +1389,7 @@ namespace WebSocketSharp.Net
     }
 
     /// <summary>
-    /// Get the value of the header with the specified name in the collection.
+    /// Get the value of a header with the specified name from the collection.
     /// </summary>
     /// <returns>
     ///   <para>
