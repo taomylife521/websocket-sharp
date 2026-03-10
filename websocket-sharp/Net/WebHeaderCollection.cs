@@ -1107,7 +1107,7 @@ namespace WebSocketSharp.Net
     /// Adds the specified header to the collection.
     /// </summary>
     /// <param name="header">
-    /// A <see cref="string"/> that specifies the header to add,
+    /// A <see cref="string"/> that specifies a header to add,
     /// with the name and value separated by a colon character (':').
     /// </param>
     /// <exception cref="ArgumentException">
