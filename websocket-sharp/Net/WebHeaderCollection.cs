@@ -1428,7 +1428,7 @@ namespace WebSocketSharp.Net
     }
 
     /// <summary>
-    /// Get the name of the header at the specified index in the collection.
+    /// Get the name of a header at the specified index from the collection.
     /// </summary>
     /// <returns>
     /// A <see cref="string"/> that receives the name of the header.
