@@ -1447,7 +1447,7 @@ namespace WebSocketSharp.Net
     }
 
     /// <summary>
-    /// Get the values of the header at the specified index in the collection.
+    /// Get the values of a header at the specified index from the collection.
     /// </summary>
     /// <returns>
     ///   <para>
