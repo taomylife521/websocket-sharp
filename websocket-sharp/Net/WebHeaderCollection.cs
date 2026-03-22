@@ -1576,7 +1576,8 @@ namespace WebSocketSharp.Net
     /// the response.
     /// </summary>
     /// <returns>
-    /// <c>true</c> if the header cannot be set; otherwise, <c>false</c>.
+    /// <c>true</c> if the specified header cannot be set; otherwise,
+    /// <c>false</c>.
     /// </returns>
     /// <param name="headerName">
     /// A <see cref="string"/> that specifies the name of the header to test.
