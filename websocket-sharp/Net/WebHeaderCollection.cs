@@ -1580,7 +1580,7 @@ namespace WebSocketSharp.Net
     /// <c>false</c>.
     /// </returns>
     /// <param name="headerName">
-    /// A <see cref="string"/> that specifies the name of the header to test.
+    /// A <see cref="string"/> that specifies the name of a header to test.
     /// </param>
     /// <param name="response">
     /// A <see cref="bool"/>: <c>true</c> if the test is for the response;
