@@ -1832,7 +1832,7 @@ namespace WebSocketSharp.Net
     /// Sets the specified header to the specified value.
     /// </summary>
     /// <param name="name">
-    /// A <see cref="string"/> that specifies the name of the header to set.
+    /// A <see cref="string"/> that specifies the name of a header to set.
     /// </param>
     /// <param name="value">
     /// A <see cref="string"/> that specifies the value of the header to set.
