@@ -1839,6 +1839,10 @@ namespace WebSocketSharp.Net
     /// <summary>
     /// Sets the specified header to the specified value.
     /// </summary>
+    /// <remarks>
+    /// If the specified header is already present in the collection,
+    /// <paramref name="value"/> replaces the existing value.
+    /// </remarks>
     /// <param name="name">
     /// A <see cref="string"/> that specifies the name of a header to set.
     /// </param>
