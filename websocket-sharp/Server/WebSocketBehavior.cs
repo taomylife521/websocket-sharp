@@ -643,6 +643,19 @@ namespace WebSocketSharp.Server
       return null;
     }
 
+    private bool executeBeforeOpen ()
+    {
+      _registered = _sessions.Add (this);
+
+      if (!_registered) {
+        _websocket.Close (CloseStatusCode.Away);
+
+        return false;
+      }
+
+      return true;
+    }
+
     private void onClose (object sender, CloseEventArgs e)
     {
       if (!_registered)
