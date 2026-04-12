@@ -83,6 +83,7 @@ namespace WebSocketSharp
     private bool                           _emitOnPing;
     private static readonly byte[]         _emptyBytes;
     private bool                           _enableRedirection;
+    private Func<bool>                     _executorBeforeOpen;
     private string                         _extensions;
     private object                         _forMessageEventQueue;
     private object                         _forPing;
@@ -323,6 +324,17 @@ namespace WebSocketSharp
 
       set {
         _handshakeRequestResponder = value;
+      }
+    }
+
+    // As server
+    internal Func<bool> ExecutorBeforeOpen {
+      get {
+        return _executorBeforeOpen;
+      }
+
+      set {
+        _executorBeforeOpen = value;
       }
     }
 
@@ -1797,6 +1809,11 @@ namespace WebSocketSharp
         _log.Error (ex.Message);
         _log.Debug (ex.ToString ());
       }
+    }
+
+    private bool executeBeforeOpen ()
+    {
+      return _executorBeforeOpen != null ? _executorBeforeOpen () : true;
     }
 
     private ClientSslConfiguration getSslConfiguration ()
